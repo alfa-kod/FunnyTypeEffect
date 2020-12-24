@@ -1,7 +1,8 @@
 from pynput.keyboard import Key, Listener
 import pygame
 from pygame.locals import *
-
+import os
+cwd = os.getcwd()
 pygame.init()
 
 lastkey = ""#Save the last key for exit proccess
@@ -9,7 +10,9 @@ lastpressed = ""
 def on_press(key):
     global lastpressed
     #When pressed a key play sound with pygame
-    sound = pygame.mixer.Sound("click.mp3")
+    soundDir=cwd+"\click.mp3"
+    soundDir.replace("\\", "/")
+    sound = pygame.mixer.Sound(soundDir)
     if lastpressed != key:
         sound.play()
     lastpressed = key
