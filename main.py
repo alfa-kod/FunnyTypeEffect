@@ -18,11 +18,16 @@ def on_press(key):
 
     soundDirBackspace = cwd + "\\backspace.mp3"
     soundDirBackspace = soundDirBackspace.replace("\\", "/")
+
+    soundDirSpace = cwd + "\\space.mp3"
+    soundDirSpace = soundDirSpace.replace("\\", "/")
     
     if key == Key.enter:
         sound = pygame.mixer.Sound(soundDirEnter)
     elif key == Key.backspace:
         sound = pygame.mixer.Sound(soundDirBackspace)
+    elif key == Key.space:
+        sound = pygame.mixer.Sound(soundDirSpace)
     else:
          sound = pygame.mixer.Sound(soundDirClick)
     
