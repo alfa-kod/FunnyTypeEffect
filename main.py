@@ -10,17 +10,20 @@ lastpressed = ""
 def on_press(key):
     global lastpressed
     #When pressed a key play sound with pygame
-    soundDirClick = cwd + "\\click.mp3"
+    soundDirClick = cwd + "\\sounds\\click.mp3"
     soundDirClick = soundDirClick.replace("\\", "/")
 
-    soundDirEnter = cwd + "\\enter.mp3"
+    soundDirEnter = cwd + "\\sounds\\enter.mp3"
     soundDirEnter = soundDirEnter.replace("\\", "/")
 
-    soundDirBackspace = cwd + "\\backspace.mp3"
+    soundDirBackspace = cwd + "\\sounds\\backspace.mp3"
     soundDirBackspace = soundDirBackspace.replace("\\", "/")
 
-    soundDirSpace = cwd + "\\space.mp3"
+    soundDirSpace = cwd + "\\sounds\\space.mp3"
     soundDirSpace = soundDirSpace.replace("\\", "/")
+
+    soundDirDelete = cwd + "\\sounds\\delete.mp3"
+    soundDirDelete = soundDirSpace.replace("\\", "/")
     
     if key == Key.enter:
         sound = pygame.mixer.Sound(soundDirEnter)
@@ -28,6 +31,8 @@ def on_press(key):
         sound = pygame.mixer.Sound(soundDirBackspace)
     elif key == Key.space:
         sound = pygame.mixer.Sound(soundDirSpace)
+    elif key == Key.delete:
+        sound = pygame.mixer.Sound(soundDirDelete)
     else:
          sound = pygame.mixer.Sound(soundDirClick)
     
