@@ -8,8 +8,9 @@ Just clone this repo and install requirements.txt.
 $ pip install -r requirements.txt
 $ python main.py
 ```
+# Eğlenceli Yazma Efekti
 # TR
--Python3ile kodlandı.
+-Python3 ile kodlandı.
 Funny Type Effect bir klavye ses efekti programıdır.
 ### Nasıl yüklenir?
 Bu depoyu klonlayın ve requirements.txt içinde yer alan gereksinimleri yükleyin.
