@@ -14,7 +14,7 @@ def on_press(key):
     soundDirClick = soundDirClick.replace("\\", "/")
 
     soundDirEnter = cwd + "\\enter.mp3"
-    soundDirEnter = soundDirEnter.replace("\\", "/"),
+    soundDirEnter = soundDirEnter.replace("\\", "/")
 
     soundDirBackspace = cwd + "\\backspace.mp3"
     soundDirBackspace = soundDirBackspace.replace("\\", "/")
